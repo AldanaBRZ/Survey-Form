@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://kit.fontawesome.com/825b9f298c.js" crossorigin="anonymous"></script>
+</head>
+<body id="main">
+  <div class="wrapper">
+    <div class="title-box">
+       <div id="title">
+        <h1>Reading habits survey form</h1>
+      </div>
+      <div id="description">
+        <p>Thank you for taking the time to answer this survey</p>
+      </div>
+    </div>
+   
+    <div id="form" class="form">
+      <form id="survey-form">
+        <label for="name" id="name-label">
+          <p>Name:</p>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required> 
+        </label>
+        <label for="email" id="email-label">
+          <p>Email:</p>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </label>
+        <label for="number" id="number-label">
+          <p>Age (optional)</p>
+          <input type="number" name="age" id="number" class="form-control" min="1" max="150" placeholder="Age">
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+          <p>How many books did you read last month?</p>
+          <select id="dropdown" name="read-how-much" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="none">None</option>
+            <option value="pages">Just some pages</option>
+            <option value="half">Half</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+            <option value="ten">10</option>
+            <option value="eleven">11</option>
+            <option value="twelve">12</option>
+            <option value="thirteen">13</option>
+            <option value="fourteen">14</option>
+            <option value="fifteen">15</option>
+            <option value="more">More</option>
+            <option value="others">I did't read a book but I read articles or similar things</option>
+          </select>
+        </label>
+
+        <label for="radio" id="radio-label">
+          <p>Will you try to read more next month?</p>
+          <div>
+            <input type="radio" id="yes" name="yes-maybe-no" value="yes" class="input-radio">
+            <label for="yes" id="yes-label">Yes</label>
+          </div>
+          <div>
+            <input type="radio" id="maybe" name="yes-maybe-no" value="maybe" class="input-radio">
+            <label for="maybe" id="maybe-label">Maybe</label>
+          </div>
+          <div>
+            <input type="radio" id="no" name="yes-maybe-no" value="no" class="input-radio">
+            <label for="no" id="no-label">No</label>
+          </div>
+        </label>
+
+        <label for="checkbox" id="checkbox-label">
+          <p>Which genres do you like?</p>
+          <div>
+            <input type="checkbox" id="action-and-adventure" name="genre" value="action-and-adventure" class="input-checkbox">
+            <label for="action-and-adventure" id="action-and-adventure-label">Action and adventure</label>
+          </div>
+          <div>
+            <input type="checkbox" id="history" name="genre" value="history" class="input-checkbox">
+            <label for="history" id="history-label">History</label>
+          </div>
+          <div>
+            <input type="checkbox" id="comic-book" name="genre" value="comic-book" class="input-checkbox">
+            <label for="comic-book" id="comic-book-label">Comic Book</label>
+          </div>
+          <div>
+            <input type="checkbox" id="drama" name="genre" value="drama" class="input-checkbox">
+            <label for="drama" id="drama-label">Drama</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fantasy" name="genre" value="fantasy" class="input-checkbox">
+            <label for="fantasy" id="fantasy-label">Fantasy</label>
+          </div>
+          <div>
+            <input type="checkbox" id="autobiography" name="genre" value="autobiography" class="input-checkbox">
+            <label for="autobiography" id="autobiography-label">Autobiography</label>
+          </div>
+          <div>
+            <input type="checkbox" id="health" name="genre" value="health" class="input-checkbox">
+            <label for="health" id="health-label">Health</label>
+          </div>
+          <div>
+            <input type="checkbox" id="science" name="genre" value="science" class="input-checkbox">
+            <label for="science" id="science-label">Science</label>
+          </div>
+          <div>
+            <input type="checkbox" id="science-fiction" name="genre" value="science-fiction" class="input-checkbox">
+            <label for="science-fiction" id="science-fiction-label">Science Fiction</label>
+          </div>
+          <div>
+            <input type="checkbox" id="religion" name="genre" value="religion" class="input-checkbox">
+            <label for="religion" id="religion-label">Religion</label>
+          </div>
+        </label>
+
+        <label for="comment-box" id="comment-box-label">
+          <p>Comments or suggestions about the survey:</p>
+          <textarea id="comment-box" class="input-textarea" name="comment" placeholder="Enter extra comments here..."></textarea>
+        </label>
+
+        <label for="submit-button" id="submit-button-label">
+          <button>Submit</button>
+        </label>
+        
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
